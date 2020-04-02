@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: currentColor;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+p + p {
+  margin-top: 24px;
+}
+
+header,
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-family: "Abril Fatface", serif;
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #ff9f1a 0%, #ff9f1a 100%);
+  background-position: 0 70%;
+  background-repeat: repeat-x;
+  background-size: auto 0.5em;
+}
+
+/* Hero Section */
+
+.hero-section {
+  min-height: 100vh;
+  color: #000;
+  background-color: #fff200;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-title {
+  font-size: 8rem;
+  font-family: "Abril Fatface", serif;
+}
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-icons {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.hero-icon {
+  display: inline-block;
+  box-shadow: none;
+  padding: 1em 1.2em;
+  border-radius: 0.5em;
+  margin-right: 2em;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+}
+
+.hero-icon:last-of-type {
+  margin-right: unset;
+}
+
+.hero-icon:hover {
+  box-shadow: -12px -12px 12px 0 rgba(230, 218, 0, 0.6),
+    12px 12px 12px 0 rgba(0, 0, 0, 0.09);
+}
+
+/* About Section */
+
+.about-section {
+  min-height: 100vh;
+  background-color: #17c0eb;
+  display: flex;
+  align-items: center;
+}
+
+.about-section .section-subtitle {
+  font-size: 2rem;
+}
+
+.about-content {
+  margin-top: 24px;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: -1;
+}
+
+.about-image img {
+  width: 246px;
+  margin: 24px;
+  border: 12px solid #18dcff;
+  transform: rotate(10deg);
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: rotate(0);
+}
+
+/* Projects Section */
+
+.projects-container {
+  margin-top: 24px;
+  justify-content: space-around;
+}
+
+.project {
+  margin: 24px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.product-body {
+  padding: 24px;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.product-body p {
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons a {
+  margin: 12px 12px 0;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 800px) {
+  .hero-title {
+    line-height: 1;
+    font-size: 5rem;
+  }
+  .about-image img {
+    transform: initial;
+    transition: initial;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 1168px;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .column.is-one-third {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+
+  .column.is-two-third {
+    flex: 2;
+  }
+
+  .hero-icons {
+    justify-content: unset;
+  }
+
+  .about-image {
+    order: unset;
+  }
+
+  footer {
+    text-align: unset;
+  }
+
+  .footer-icons {
+    justify-content: flex-end;
+  }
+}
