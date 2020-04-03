@@ -76,10 +76,28 @@ section {
   font-family: "Abril Fatface", serif;
 }
 
+.rotator-box {
+  height: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
 .hero-subtitle {
   font-size: 2.5rem;
+  position: relative;
   font-weight: bold;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  animation: move 7.5s infinite 1.5s;
 }
+
+@keyframes move{
+  20% { top: -3rem; }
+  40% { top: -6rem; }
+  60% { top: -9rem; }
+  80% { top: -12rem; }
+  }
 
 .hero-icons {
   margin-top: 1rem;
@@ -221,6 +239,11 @@ footer {
 
   .column.is-two-third {
     flex: 2;
+  }
+
+  .project {
+    flex-basis: 33%;
+    max-width: 33%;
   }
 
   .bounce {
