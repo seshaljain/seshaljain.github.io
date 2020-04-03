@@ -45,7 +45,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
 }
 
 .column {
@@ -132,6 +131,7 @@ section {
 
 .about-content {
   margin-top: 24px;
+  align-items: center;
 }
 
 .about-image {
