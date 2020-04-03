@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Nunito,"Helvetica Neue",sans-serif;
 }
 
 a {
@@ -89,14 +89,14 @@ section {
   white-space: nowrap;
   top: 0;
   left: 0;
-  animation: move 7.5s infinite 1.5s;
+  animation: move 5s infinite 1s;
 }
 
 @keyframes move{
-  20% { top: -3rem; }
-  40% { top: -6rem; }
-  60% { top: -9rem; }
-  80% { top: -12rem; }
+  20% { top: -3.5rem; }
+  40% { top: -7rem; }
+  60% { top: -10.5rem; }
+  80% { top: -14rem; }
   }
 
 .hero-icons {
